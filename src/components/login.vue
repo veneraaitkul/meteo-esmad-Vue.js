@@ -5,8 +5,6 @@
         <img
           src="../assets/logo.png"
           style="width:150px;margin-bottom:30px"
-          alt="Avatar"
-          class="avatar"
         >
       </div>
       <div class="header">
@@ -15,45 +13,46 @@
       <div class="container">
         <input type="text" placeholder="O teu e-mail..." name="uname" id="uname" required>
 
-        <br>
+        <br> 
+        
         <input type="password" placeholder="A tua palavra-passe..." name="psw" id="psw" required>
+        
         <br>
 
         <button v-on:click="login()">
-          <!-- <button> -->
           <b>ENTRAR</b>
         </button>
 
         <br>
 
         <router-link :to="{path:'/registo'}">
-         
-            <u>Quero registar-me!</u>
-         
+             <u>Quero registar-me!</u>
         </router-link>
-        <br>
         
-        <br>
-        <span>Esqueci-me da minha <a v-b-modal.myModal ><u> palavra-passe</u></a>.</span>
-        <!------------------------------------------------------------------------------------------------------->
-         <b-modal centered id="myModal" tabindex="-1"  role="dialog" hide-footer  hide-header>
-           
-         <p id="txtModal">Introduz aqui o seu e-mail para repor a sua palavra-passe:</p>
-    
-         <input type="text" style="width:100%;" placeholder="O teu e-mail..." name="username" id="username" required>
-        
-              <br>
-               <button  id="btnModal" v-on:click="reporPass()">
-                <b>ENVIAR</b>
-                </button>
-                <br> 
-                
-                <a v-b-modal.myModal1 style="float:left;color:gray"><u>Já tenho a chave.</u></a>
-          
 
-          </b-modal>
         <br>
+        <br>
+        
+        <span>Esqueci-me da minha <a v-b-modal.myModal ><u> palavra-passe</u></a>.</span>
+        
         <!------------------------------------------------------------------------------------------------------->
+        
+         <b-modal centered id="myModal" tabindex="-1"  role="dialog" hide-footer  hide-header>           
+         <p id="txtModal">Introduz aqui o seu e-mail para repor a sua palavra-passe:</p>    
+         <input type="text" style="width:100%;" placeholder="O teu e-mail..." name="username" id="username" required>
+         <br>
+          <button  id="btnModal" v-on:click="reporPass()">
+            <b>ENVIAR</b>
+          </button>
+          
+          <br> 
+           <a v-b-modal.myModal1 style="float:left;color:gray"><u>Já tenho a chave.</u></a>
+          </b-modal>
+          
+        <br>
+        
+        <!------------------------------------------------------------------------------------------------------->
+        
 <b-modal centered id="myModal1" tabindex="-1" role="dialog" hide-footer hide-header>
   <div id="divNewPass">
     <form>
