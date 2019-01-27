@@ -35,8 +35,6 @@
         
         <span>Esqueci-me da minha <a v-b-modal.myModal ><u> palavra-passe</u></a>.</span>
         
-        <!------------------------------------------------------------------------------------------------------->
-        
          <b-modal centered id="myModal" tabindex="-1"  role="dialog" hide-footer  hide-header>           
          <p id="txtModal">Introduz aqui o seu e-mail para repor a sua palavra-passe:</p>    
          <input type="text" style="width:100%;" placeholder="O teu e-mail..." name="username" id="username" required>
@@ -51,7 +49,6 @@
           
         <br>
         
-        <!------------------------------------------------------------------------------------------------------->
         
 <b-modal centered id="myModal1" tabindex="-1" role="dialog" hide-footer hide-header>
   <div id="divNewPass">
